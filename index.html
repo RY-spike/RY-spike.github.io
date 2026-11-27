@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#16483e"><title>一页笔记 · A4 排版工作台</title>  <script type="module" crossorigin src="/assets/index-D879g4JX.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-z1-VCH6q.css">
+</head>
+<body><header><div class="brand"><span class="logo" aria-hidden="true">▤</span> 一页笔记</div><span class="privacy">本地处理 · 文件留在浏览器</span></header>
+<main><div class="intro"><div><h1>A4 排版工作台</h1><p>挑出要保留的知识点，排成一份可打印的笔记。</p></div><button id="save" disabled>导出 PDF</button></div>
+<div class="workspace"><section class="editor"><div class="section-head"><h2>内容清单</h2><div class="selection-actions"><span id="count" role="status">已选 0 项</span><button type="button" id="apply" aria-controls="pages" disabled>应用</button></div></div>
+<div class="selection-scroll" tabindex="0" role="region" aria-label="可滚动的内容清单">
+<button class="drop" id="pick" disabled><span class="paper-icon" aria-hidden="true">＋</span><strong>选择或拖入文件</strong><small>PPTX、PDF、DOCX、PNG、JPEG</small></button><input id="file" type="file" accept=".pptx,.pdf,.docx,.png,.jpg,.jpeg" multiple hidden>
+<div role="status" id="status">正在准备离线资源（含中文字体和 OCR 识别包）…</div><div id="sources"></div></div></section>
+<section class="viewer"><div class="section-head"><h2>打印预览</h2><span>A4 纵向 · 四边 0 mm · 栏距 0.5 mm</span></div><div class="column-setting"><label>排版栏数 <select id="columns"><option value="auto">自动</option><option value="1">1 栏</option><option value="2">2 栏</option><option value="3">3 栏</option></select></label>
+<label>最小正文字号 <select id="font-floor" aria-describedby="small-print-warning"><option value="7">7 pt</option><option value="6">6 pt</option><option value="5.5">5.5 pt</option><option value="5">5 pt</option></select></label>
+<p id="small-print-warning" role="status" hidden>5 pt 字号很小，打印时细笔画和公式下标可能模糊。建议先按实际大小试印。</p></div><div class="paper-bed"><div id="pages"></div><div id="empty"><div class="ghost" aria-hidden="true"><i></i><i></i><i></i></div><strong>等待排版</strong><p>选中的内容会显示在这里</p></div></div><footer id="info" aria-live="polite">210 × 297 mm　·　最小字号 7 pt</footer></section></div></main></body></html>
+
+
+
